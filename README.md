@@ -24,7 +24,7 @@ There is a constructor. Name of the token is given 'BESTTOKEN' and its symbol/Ab
         totalTokenSupply = 0;
     }
 ```
-Then in the last there are two functions mint and burn who have appropriate checks/reverts
+Then in the last there are two functions mint and burn who have appropriate checks/reverts. These functions are used to mint new tokens or burn the existing tokens. Minting and Burning directly effects the totalTokenSupply.
 ```solidity
    function mint(address user , uint256 value) public {
         if(value <= type(uint256).max){           // basic check for value
